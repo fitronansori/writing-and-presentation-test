@@ -31,7 +31,7 @@
 - `rm -r` untuk menghapus direktori beserta isinya
 - `rm -rf` untuk menghapus direktori beserta isinya tanpa konfirmasi.
 
-# 2. Git dan Github
+## 2. Git dan Github
 
 - Git adalah sebuah sistem pengontrol versi (Version Control System) pada proyek perangkat lunak yang diciptakan oleh Linus Torvalds. Git adalah salah satu sistem pengontrol versi terdistribusi (Distributed Version Control System) pada proyek perangkat lunak yang berfokus pada kecepatan.
 
@@ -53,13 +53,13 @@
   11. Melakukan perubahan pada file di Github
   12. Pull perubahan ke repository lokal
 
-# 3. HTML
+## 3. HTML
 
 - HTML adalah singkatan dari HyperText Markup Language. HTML adalah bahasa markup yang digunakan untuk membuat sebuah halaman web. HTML digunakan untuk menentukan struktur halaman web, seperti judul, paragraf, gambar, dan lain-lain.
 
 - Stuktur HTML
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -115,7 +115,7 @@
   - `<aside>` untuk menentukan konten sampingan
   - `<footer>` untuk menentukan footer
 
-# 4. CSS
+## 4. CSS
 
 - CSS adalah singkatan dari Cascading Style Sheets. CSS adalah bahasa style sheet yang digunakan untuk mengatur tampilan dari sebuah halaman web. CSS digunakan untuk mengatur warna, font, ukuran, dan lain-lain.
 
@@ -123,12 +123,13 @@
 
   - Inline CSS :
 
-    ```
+    ```css
     <p style="color: red;">Ini adalah paragraf</p>
     ```
 
   - Internal CSS :
-    ```
+
+    ```css
     <head>
       <style>
         p {
@@ -137,27 +138,28 @@
       </style>
     </head>
     ```
+
   - External CSS : CSS yang disisipkan di dalam file terpisah dengan ekstensi. contoh code CSS di file terpisah :
 
-        ```
-        body {
-          background-color: red;
-        }
-        ```
+    ```css
+    body {
+      background-color: red;
+    }
+    ```
 
-        cara menyisipkan CSS di HTML :
+    cara menyisipkan CSS di HTML :
 
-        ```
-        <head>
-          <link rel="stylesheet" href="style.css">
-        </head>
-        ```
+    ```css
+    <head>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    ```
 
 - CSS Selector adalah sebuah cara untuk memilih element HTML yang akan diberikan style CSS. CSS Selector terdiri dari 4 jenis yaitu CSS Selector Element, CSS Selector ID, CSS Selector Class, dan CSS Selector Universal.
 
   - CSS Selector Element adalah sebuah cara untuk memilih element HTML berdasarkan nama tag HTML. contoh CSS Selector Element :
 
-    ```
+    ```css
     p {
       color: red;
     }
@@ -165,7 +167,7 @@
 
   - CSS Selector ID adalah sebuah cara untuk memilih element HTML berdasarkan id attribute. contoh CSS Selector ID :
 
-    ```
+    ```css
     #text {
       color: red;
     }
@@ -173,7 +175,7 @@
 
   - CSS Selector Class adalah sebuah cara untuk memilih element HTML berdasarkan class attribute. contoh CSS Selector Class :
 
-    ```
+    ```css
     .text {
       color: red;
     }
@@ -181,11 +183,11 @@
 
   - CSS Selector Universal adalah sebuah cara untuk memilih semua element HTML. contoh CSS Selector Universal :
 
-        ```
-        * {
-          color: red;
-        }
-        ```
+    ```css
+    * {
+      color: red;
+    }
+    ```
 
     <!-- CSS FLEXBOX -->
 
@@ -212,7 +214,7 @@
     - align-self : properti ini digunakan untuk mengatur posisi dari flexbox item.
     - flex : properti ini digunakan untuk mengatur ukuran dari flexbox item.
 
-# 5. Algoritma
+## 5. Algoritma
 
 - Algoritma adalah langkah-langkah yang jelas dan sistematis untuk menyelesaikan suatu masalah. Algoritma terdiri dari 3 bagian yaitu input, proses, dan output.
 
@@ -227,7 +229,7 @@
 
   - Menghitung luas persegi panjang
 
-    ```
+    ```text
     1. Mulai
     2. Masukkan nilai panjang
     3. Masukkan nilai lebar
@@ -238,20 +240,21 @@
 
 - Penerapan dalam codingan
 
-        ```
-        function luasPersegiPanjang(panjang, lebar) {
-        return panjang * lebar;
-        }
+  ```javascript
+  function luasPersegiPanjang(panjang, lebar) {
+    return panjang * lebar;
+  }
 
-        console.log(luasPersegiPanjang(10, 5));
-        ```
+  console.log(luasPersegiPanjang(10, 5));
+  ```
 
 - Cara presentasikan algoritma adalah sebagai berikut:
 
   - Flowchart
     - ![alt text](Flowchart-menghitung-luas-persegi-panjang.png)
   - Pseudocode
-    ```
+
+    ```text
     program luas persegi panjang
     deklarasi panjang, lebar, luas
     masukkan panjang
@@ -260,7 +263,7 @@
     tampilkan luas
     ```
 
-# 6. Javascript
+## 6. Javascript
 
 - Javascript adalah bahasa pemrograman yang digunakan untuk membuat website menjadi lebih interaktif. Javascript terdiri dari 2 bagian yaitu client-side dan server-side.
 
@@ -271,16 +274,21 @@
   - Mempermudah dalam membuat website menjadi lebih responsif
 
 - Cara menggunakan Javascript adalah sebagai berikut:
+
   - Menggunakan tag script
-  ```
+
+  ```html
   <script>
-     alert("Hello World");
+    alert("Hello World");
   </script>
   ```
+
   - Menggunakan tag script dengan external file
-  ```
+
+  ```html
   <script src="script.js"></script>
   ```
+
 - Tipe data Javascript adalah sebagai berikut:
 
   - Number : tipe data ini digunakan untuk menyimpan angka.
@@ -294,91 +302,97 @@
   - Operator Aritmatika : operator ini digunakan untuk melakukan operasi matematika.
     contoh :
 
-  ```
+  ```javascript
   +, -, *, /, %, ++, --
   ```
 
   - Operator Perbandingan : operator ini digunakan untuk melakukan perbandingan.
     contoh :
 
-  ```
+  ```javascript
     ==, ===, !=, !==, >, <, >=, <=
   ```
 
   - Operator Logika : operator ini digunakan untuk melakukan operasi logika.
     contoh :
 
-  ```
-   &&, ||, !
+  ```javascript
+    &&, ||, !
   ```
 
 - conditional Javascript dan contohnya :
 
   - if
 
-  ```
+  ```javascript
   if (condition) {
-      // code
+    // code
   }
   ```
 
   - if else
 
-  ```
+  ```javascript
   if (condition) {
-      // code
+    // code
   } else {
-      // code
+    // code
   }
   ```
 
   - if else if
 
-  ```
+  ```javascript
   if (condition) {
-      // code
+    // code
   } else if (condition) {
-      // code
+    // code
   } else {
-      // code
+    // code
   }
   ```
 
   - switch
 
-  ```
+  ```javascript
   switch (expression) {
-      case x:
+    case x:
       // code
       break;
-      case y:
+    case y:
       // code
       break;
-      default:
-      // code
+    default:
+    // code
   }
   ```
 
 - looping Javascript dan contohnya :
+
   - for
-  ```
+
+  ```javascript
   for (let i = 0; i < 10; i++) {
-      // code
+    // code
   }
   ```
+
   - while
-  ```
+
+  ```javascript
   let i = 0;
   while (i < 10) {
-      // code
-      i++;
+    // code
+    i++;
   }
   ```
+
   - do while
-  ```
+
+  ```javascript
   let i = 0;
   do {
-      // code
-      i++;
+    // code
+    i++;
   } while (i < 10);
   ```
