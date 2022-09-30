@@ -34,7 +34,7 @@ function tes(a, b) {
 tes(1, 2); // 3
 ```
 
-## 2. Data Type Built in Prototype & Method
+## 2. Data Type Built in Prototype and Method
 
 - Built in prototype adalah sebuah object yang terdapat pada setiap data type.
 
