@@ -268,3 +268,123 @@ Math.random(); // 0.123456789
 
 - dan masih banyak lagi method-method lainnya.
   bisa di lihat di [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+
+## 3. Javascript DOM (Document Object Model)
+
+### Apa itu DOM?
+
+- DOM adalah singkatan dari Document Object Model yang merupakan representasi dari HTML yang ada di browser.
+
+- DOM adalah sebuah interface yang memungkinkan kita untuk mengubah struktur HTML dan CSS yang ada di browser.
+
+### Selecting Element
+
+- Menggunakan ID : mengambil element berdasarkan ID
+
+```javascript
+document.getElementById("id");
+```
+
+- Menggunakan Class : mengambil element berdasarkan class
+
+```javascript
+document.getElementsByClassName("class");
+```
+
+- Menggunakan Tag : mengambil element berdasarkan tag
+
+```javascript
+document.getElementsByTagName("tag");
+```
+
+- Menggunakan Query Selector yaitu mengambil element berdasarkan selector CSS
+
+```javascript
+document.querySelector("selector");
+```
+
+- Menggunakan Query Selector All yaitu mengambil element berdasarkan selector CSS
+
+```javascript
+document.querySelectorAll("selector");
+```
+
+### Traversing Element
+
+Traversing Element adalah cara untuk berpindah dari satu element ke element lainnya.
+
+### Manipulating Element
+
+- Manipulating Element adalah cara untuk mengubah element yang sudah kita ambil.
+
+- Membuat Element Baru
+
+```javascript
+document.createElement("tag");
+```
+
+- Menambahkan Element Baru
+
+```javascript
+document.body.appendChild(element);
+```
+
+- Set Content
+
+```javascript
+element.textContent = "text";
+```
+
+- Mengubah isi element
+
+```javascript
+element.innerHTML = "isi";
+```
+
+- Mengubah atribut element
+
+```javascript
+element.setAttribute("attribute", "value");
+```
+
+- Mengubah style element
+
+```javascript
+element.style.property = "value";
+```
+
+- Mengubah class element
+
+```javascript
+element.classList.add("class");
+element.classList.remove("class");
+element.classList.toggle("class");
+```
+
+- dan masih banyak lagi method-method lainnya.
+  bisa di lihat di [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+
+### Working with Events
+
+- Event adalah sebuah aksi yang dilakukan oleh user.
+
+- Event Listener adalah sebuah method yang akan dijalankan ketika sebuah event terjadi.
+
+- Menambahkan Event Listener
+
+```javascript
+element.addEventListener("event", function () {
+  // code
+});
+```
+
+- Macam-macam event yang bisa di gunakan :
+
+  - click
+  - mouseover
+  - mouseout
+  - keydown
+  - keyup
+  - keypress
+  - dan masih banyak lagi event-event lainnya.
+    bisa di lihat di [MDN](https://developer.mozilla.org/en-US/docs/Web/Events)
