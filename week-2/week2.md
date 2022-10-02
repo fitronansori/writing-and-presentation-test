@@ -1,5 +1,7 @@
 # Writing and Presentations Week 2
 
+- link g-drive : (<https://drive.google.com/drive/folders/1qhO-vJIRn6N85XGSnZOlc541jIbEoy28?usp=sharing>)
+
 ## 1. Scope and Function
 
 - Scope adalah bagaimana sebuah variabel dapat diakses oleh program atau bagaimana sebuah variabel dapat diakses oleh sebuah fungsi.

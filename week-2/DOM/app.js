@@ -15,7 +15,7 @@ headerOne.style.borderRadius = "10px";
 // Merubah attribute
 headerOne.setAttribute("name", "header-1");
 headerOne.setAttribute("id", "header-1");
-
+console.log(headerOne);
 // console.log(headerOne);
 
 let wrapper = document.getElementById("wrapper");
