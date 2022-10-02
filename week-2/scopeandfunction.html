@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope And Function</title>
+  </head>
+  <body>
+    <!-- Scope and Function -->
+    <script>
+      let a = 10;
+      function add() {
+        let b = 20;
+        console.log(a + b);
+      }
+      //add();
+      //console.log(b);
+
+      function penjumlahan(a, b) {
+        return a + b;
+      }
+      console.log(penjumlahan(10, 20));
+    </script>
+  </body>
+</html>
